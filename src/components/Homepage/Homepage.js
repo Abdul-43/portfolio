@@ -26,10 +26,6 @@ function Home() {
               window.open("https://www.linkedin.com/in/abdul-rahman-3350a91a9");
             }}
               className='socailmediabtn'><FaLinkedinIn className='icon' /></button>
-            <button onClick={() => {
-              window.open("https://instagram.com/abd.__._._/");
-            }}
-              className='socailmediabtn'><AiFillInstagram className='icon' /></button>
           </Col>
 
           <Col md={5}>

@@ -13,13 +13,19 @@ function ProjectCard(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button className="viewbtn" variant="primary" href={props.ghLink} target="_blank">
-          View
-        </Button>
-        {"\n"}
-        {"\n"}
-
-
+        <hr />
+        <div className="d-flex flex-wrap">
+          <Button className="viewbtn mx-2 mb-2" variant="primary" href={props.ghLink} target="_blank">
+            Open App
+          </Button>
+          <Button className="viewbtn mx-2 mb-2" variant="primary" href={props.feLink} target="_blank">
+            Frontend code
+          </Button>
+          <Button className="viewbtn mx-2 mb-2" variant="primary" href={props.beLink} target="_blank">
+            Backend code
+          </Button>
+        </div>
+        {/* {console.log(props)}
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
@@ -30,7 +36,7 @@ function ProjectCard(props) {
 
             {"Demo"}
           </Button>
-        )}
+        )} */}
       </Card.Body>
     </Card>
   );

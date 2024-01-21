@@ -1,6 +1,6 @@
 import React from "react";
 import "../../pages/style.css";
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 function Contactpage() {
   return (
@@ -13,15 +13,29 @@ function Contactpage() {
           <br /> you have any further questions or just want to say hi, <br />
           I’ll try my best to get back to you!
         </p>
-        <button
-          className="contactbtn"
-          onClick={() => {
-            window.open("https://www.linkedin.com/in/abdul-rahman-3350a91a9");
-          }}
-        >
-          Say Hello
-        </button>
-        <span></span>
+        <Row>
+          <button
+            className="contactbtn"
+            onClick={() => {
+              window.open("https://www.linkedin.com/in/abdul-rahman-3350a91a9");
+            }}
+          >
+            Say Hello in Linkedin
+          </button>
+          <button
+            className="contactbtn"
+            onClick={() => {
+              window.open("https://github.com/Abdul-43");
+            }}
+          >
+            Github
+          </button>
+          <button
+            className="contactbtn"
+          >
+            <a className="mailto" href="mailto:abdulpnoit.ar@gmail.com">Gmail</a>
+          </button>
+        </Row>
       </Container>
     </div>
   );
