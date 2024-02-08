@@ -14,16 +14,16 @@ function ProjectCard(props) {
           {props.description}
         </Card.Text>
         <hr />
-        <div className="d-flex flex-wrap">
-          <Button className="viewbtn mx-2 mb-2" variant="primary" href={props.ghLink} target="_blank">
+        <div className="d-flex flex-wrap ">
+          {props.ghLink && <Button className="viewbtn mx-2 mb-2" variant="primary" href={props.ghLink} target="_blank">
             Open App
-          </Button>
-          <Button className="viewbtn mx-2 mb-2" variant="primary" href={props.feLink} target="_blank">
+          </Button>}
+          {props.feLink && <Button className="viewbtn mx-2 mb-2" variant="primary" href={props.feLink} target="_blank">
             Frontend code
-          </Button>
-          <Button className="viewbtn mx-2 mb-2" variant="primary" href={props.beLink} target="_blank">
+          </Button>}
+          {props.beLink && <Button className="viewbtn mx-2 mb-2" variant="primary" href={props.beLink} target="_blank">
             Backend code
-          </Button>
+          </Button>}
         </div>
         {/* {console.log(props)}
         {!props.isBlog && props.demoLink && (
