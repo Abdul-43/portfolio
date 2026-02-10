@@ -1119,7 +1119,7 @@ body {
   }
 
   .nav-links {
-    display: none;
+    display: flex;
     position: absolute;
     top: 72px;
     left: 0;
@@ -1131,10 +1131,20 @@ body {
     padding: 24px;
     border-bottom: 1px solid var(--border-subtle);
     gap: 4px;
+
+    /* Animation Initial State */
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .nav-links.mobile-open {
-    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    visibility: visible;
   }
 
   .nav-cta {
