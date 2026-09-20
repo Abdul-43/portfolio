@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Text from "./Text";
-import { AiFillGithub } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 
 function Homepage() {
   return (
@@ -12,9 +10,9 @@ function Homepage() {
 
       <div className="hero-content">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 1.6 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div className="hero-status">
             <span className="hero-status-dot" />
@@ -26,31 +24,31 @@ function Homepage() {
 
         <motion.h1
           className="hero-headline"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 1.8 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
-          I build production-grade
+          Abdul Rahman H
           <br />
-          <span className="accent-text">web applications.</span>
+          <span className="accent-text">Full Stack Developer</span>
         </motion.h1>
 
         <motion.p
           className="hero-subheadline"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 2.0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
-          Full Stack Developer specializing in React, Node.js, MongoDB,
-          and real-time systems. I design and ship end-to-end solutions
-          for fleet management, IoT platforms, and enterprise dashboards.
+          Full Stack Developer based in Dubai, UAE specializing in React.js, Node.js, TypeScript,
+          and AWS IoT Core. Designing and shipping end-to-end solutions for fleet management,
+          kiosk platforms, and real-time enterprise web applications.
         </motion.p>
 
         <motion.div
           className="hero-typewriter-wrapper"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 2.2 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
         >
           <Text />
         </motion.div>
@@ -59,7 +57,7 @@ function Homepage() {
           className="hero-actions"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 2.4 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
         >
           <a href="#experience" className="btn-primary" onClick={(e) => { e.preventDefault(); document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' }); }}>
             View My Work →
@@ -73,7 +71,7 @@ function Homepage() {
           className="hero-stats"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 2.6 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
         >
           <div className="hero-stat">
             <div className="hero-stat-value">End-to-End</div>
