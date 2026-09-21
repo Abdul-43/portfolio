@@ -11,14 +11,7 @@ import Projects from './components/Projectlist/Projectlist';
 import Contact from './components/Contactpage/Contactpage';
 
 function App() {
-  const [load, setLoad] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoad(false);
-    }, 600);
-    return () => clearTimeout(timer);
-  }, []);
+  const [load, setLoad] = useState(false);
 
   // Scroll-reveal observer
   useEffect(() => {

@@ -10,5 +10,17 @@ export default defineConfig({
     build: {
         outDir: 'build',
         sourcemap: false,
+        rollupOptions: {
+            output: {
+                manualChunks(id) {
+                    if (id.includes('node_modules')) {
+                        if (id.includes('framer-motion')) {
+                            return 'framer-motion';
+                        }
+                        return 'vendor';
+                    }
+                },
+            },
+        },
     },
 });
